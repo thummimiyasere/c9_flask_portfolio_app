@@ -17,10 +17,6 @@ def home_page():
 def profile(name):
 	return render_template('index.html', name=name)
 
-@app.route('/contact')
-def contact():
-	return render_template('contact.html')
-
 @app.route('/add_numbers', methods=['GET','POST'])
 def add_numbers_post():
 	  # --> ['5', '6', '8']
